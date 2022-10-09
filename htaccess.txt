@@ -1,0 +1,4 @@
+AuthName "Geschützter Bereich"
+AuthType Basic
+AuthUserFile "../Desktop/Website/.htpasswort"
+require valid-user
