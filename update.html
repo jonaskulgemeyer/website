@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+  </head>
+  <body>
+<div class="container counter">
+  <h1 id="head">Überarbeitung der Startseite! Zurück in: </h1>
+  <ul>
+    <li><span id="days"></span>tage</li>
+    <li><span id="hours"></span>stunden</li>
+    <li><span id="minutes"></span>minuten</li>
+    <li><span id="seconds"></span>sekunden</li>
+  </ul>
+</div>
+<div class="mini-footer">
+          <div class="copyright-text">
+            <p>© 2022
+              <a>jonaskulgemeyer.tk</a>. All rights reserved. By
+              <p>Jonas Kulgemeyer</p>
+		    
+            </p>
+			
+          </div>
+		  <script>
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Oct 14, 2022 20:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+    }, second)
+	</script>
+<style>
+body {
+   width: 100%;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.counter {
+  color: white;
+  text-align: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter h1 {
+  font-weight: normal;
+}
+
+.counter li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.counter li span {
+  display: block;
+  font-size: 4.5rem;
+}
+.mini-footer {
+ background:white;
+ text-align:center;
+ padding:32px 0;
+ margin-top:10px;
+ border-radius:10px;
+  margin-left:12px;
+ margin-right:12px;
+}
+.mini-footer p {
+ margin:0;
+ line-height:26px;
+ font-size:15px;
+ color:#999;
+}
+.mini-footer p a {
+ color:#5867dd
+}
+.mini-footer p a:hover {
+ color:#34bfa3
+}
+</style>
+  </body>
+</html>
