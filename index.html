@@ -61,6 +61,7 @@
 <a href="information.html" target="_blank">Dieser Bildschirm ändert sich nicht?</a>
 </div>
 		<noscript>Du hast Javascript deaktiviert</noscript>
+		
 		<div class="loader-line-wrap">
 			<div class="loader-line"></div>
 		</div>
@@ -85,6 +86,7 @@
 						<li><a href="#live">Livestreams</a></li>
 						<li><a href="#jonas1">Kontaktiere mich</a></li>
 						<li><a href="datenschutz.html">Datenschutz</a></li>
+						<li><a href="http://freesitestatus.com/publicreport/jclub0tu/324330">Website-Status</a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,7 +98,8 @@
 			  <a href="#live">Livestreams</a>
 			  <a href="#jonas1">Kontaktiere mich</a>
 			  <a href="datenschutz.html">Datenschutz</a>
-			  <p style="color: #1c3664; text-align: center">www.jonaskulgemeyer.tk &copy; 2022</p>
+			  <li><a href="http://freesitestatus.com/publicreport/jclub0tu/324330">Website-Status</a></li>
+			  <p style="color: #1c3664; text-align: center">www.jonaskulgemeyer.tk &copy; 2023</p>
 		</div>
 		<script>
 		function openNav() {
@@ -170,9 +173,10 @@ function closeNav() {
     selector: '.glightbox'
   });
   </script><!-- End Hero Section -->
-  
-
-
+  <script>
+const disabledKeys=["u","I"];const showAlert=e=>{e.preventDefault();return alert("Sorry, du kannst den Websitecode nicht ansehen oder kopieren!");}
+document.addEventListener("contextmenu",e=>{showAlert(e);});document.addEventListener("keydown",e=>{if(e.ctrlKey&&disabledKeys.includes(e.key)||e.key==="F12"){showAlert(e);}});
+</script>
 
 <!--<div class="notice warning"><p>NEU: Endecke jetzt den neuen Blog für die Deutschen Meisterschaften 2022 in Ulm. <a href="dm.html">Blog jetzt öffnen</a></p></div>-->
 
