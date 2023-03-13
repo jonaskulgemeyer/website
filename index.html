@@ -75,7 +75,7 @@
 					<ul>
 						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()">&#9776;</a>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="#about">Kontakt</a></li>
+						<li><a href="#kontakt">Kontakt</a></li>
 						<li><a href="#live">Livestreams</a></li>
 						<li><a href="#jonas1">Kontaktiere mich</a></li>
 						<li><a href="datenschutz.html">Datenschutz</a></li>
@@ -87,7 +87,7 @@
 		<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			  <a href="index.html">Home</a>
-			  <a href="#about">Kontakt</a>
+			  <a href="#kontakt">Kontakt</a>
 			  <a href="#live">Livestreams</a>
 			  <a href="#jonas1">Kontaktiere mich</a>
 			  <a href="datenschutz.html">Datenschutz</a>
@@ -170,10 +170,10 @@ function closeNav() {
 const disabledKeys=["u","I"];const showAlert=e=>{e.preventDefault();return alert("Sorry, Bilder oder den Websitecode kannst du nicht öffnen, kopieren oder herunterladen!");}
 document.addEventListener("contextmenu",e=>{showAlert(e);});document.addEventListener("keydown",e=>{if(e.ctrlKey&&disabledKeys.includes(e.key)||e.key==="F12"){showAlert(e);}});
 </script> 
-<div class="notice warning"><p>NEU: Endecke jetzt den neuen Blog für die Deutschen Meisterschaften 2023 der Halle in Dortmund. <a href="dm.html">Blog jetzt öffnen</a></p></div>
+<!--<div class="notice warning"><p>NEU: Endecke jetzt den neuen Blog für die Deutschen Meisterschaften 2023 der Halle in Dortmund. <a href="dm.html">Blog jetzt öffnen</a></p></div>-->
 
 	      <!-- about section start -->
-		  <div class="reveal3">
+		  <div class="reveal3" id="kontakt">
     <section data-aos="fade-up" data-aos-delay="200" class="about" id="section02">
         <div class="max-width">
             <h2  style="color:white" class="title">Kontakt</h2>
@@ -461,7 +461,7 @@ transition: all 0.9s;
         });
 
     </script>
-<!--
+
 @media all and (max-width: 900px) {
   #popUp {
     margin-left: -425px;
@@ -470,8 +470,8 @@ transition: all 0.9s;
     margin-left: 0px;
   }
 }
-	<div id="live"></div>
-	<div class="reveal4">
+	
+	<div class="reveal4" id="live">
 <div data-aos="fade-up" data-aos-delay="200" class="event-container">
    
 
@@ -503,10 +503,10 @@ transition: all 0.9s;
 
 
 </div>
--->
+
 <!--
  <div id="ueberschrift2">Livestreams</div>
-<div class="reveal4">
+<div class="reveal4" id="live">
 <div data-aos="zoom-in-up" class="event-container">
     
 
@@ -543,7 +543,7 @@ transition: all 0.9s;
 
 
 </div>
--->
+
 <div class="reveal4">
 <div data-aos="zoom-in-up" class="event-container">
     
@@ -653,13 +653,13 @@ accordionItemHeaders.forEach(accordionItemHeader => {
   });
 });
 </script>
-
+-->
 <div class="blog">
   <div class="card">
     <div class="card-content">
       <h3>Blog.</h3>
-      <h1>Endecke den neuen Blog.</h1>
-      <p class="excerpt">Neu ab 2032: Der neue Blog von jonaskulgemeyer.tk.</p>
+      <h1>Endecke jetzt den Blog.</h1>
+      <p class="excerpt">Artikel, Ankündigungen und mehr. Der Blog von jonaskulgemeyer.tk.</p>
         <button type="button">
           <a href="https://www.jonaskulgemeyerblog.tk/" >Seite besuchen</a>
           <svg
